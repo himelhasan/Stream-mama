@@ -2,9 +2,10 @@
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
+  margin: 0 auto;
 }
 
-main {
+.main {
   width: 90%;
   margin: 0 auto;
 }
@@ -21,8 +22,8 @@ p {
 
 h1 {
   font-weight: 700;
-  font-size: 70px;
-  line-height: 1em;
+  font-size: 4.5em;
+  line-height: 1.1em;
   text-transform: uppercase;
   margin: 10px 0px;
 }
@@ -45,7 +46,7 @@ h4 {
 .banner-text {
   max-width: 50%;
   color: #ffffff;
-  margin-top: 50px;
+  margin-top: 5vw;
 }
 .banner-image img {
   width: 100%;
@@ -92,10 +93,11 @@ h4 {
   border-radius: 15px;
   padding: 30px;
   height: 200px;
+  justify-content: center;
 }
 .nav-bar button {
   background: #ffffff;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 8px 20px;
   margin: 15px 0px;
   border: none;
@@ -120,7 +122,7 @@ button.active {
   flex-grow: 1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 10px;
+  column-gap: 25px;
 }
 
 /* Blog card realted all css */
@@ -171,3 +173,145 @@ button.active {
 span p {
   margin-left: 5px;
 }
+
+/* -------------------------
+FOOTER SECTION CSS
+--------------------------*/
+
+footer {
+  background-color: #161616;
+  padding: 100px 0px;
+}
+
+footer h2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  /* text-transform: uppercase; */
+
+  color: #ffffff;
+}
+
+footer hr {
+  width: 80%;
+  margin: 2% 10% !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Footer nav css */
+
+footer nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer nav a {
+  text-decoration: none;
+  color: #b9b9b9;
+  padding: 5px 10px;
+}
+footer nav a:hover {
+  color: #b0f700;
+}
+
+/* Footer social link css */
+.social-links {
+  margin: top 50px;
+}
+.social-links h4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 60px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.fa-brands {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.social-icons {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  column-gap: 30px;
+  margin-top: 10px;
+}
+
+.fa-brands:hover {
+  transform: translateY(-0.25em);
+  transition-duration: 300ms;
+  color: #b0f700;
+}
+
+/* ----------------------------------------------------------------
+Mobile responsive css starts here  
+-- ----------------------------------------------------------------*/
+
+@media (max-width: 668px) {
+  .main-body {
+    margin: 10px 0px;
+  }
+  .main-body-layout {
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 2.4em;
+  }
+
+  .banner-section {
+    flex-direction: column;
+    background: #161616;
+    border-radius: 15px;
+    margin-top: 30px;
+  }
+  .banner-text {
+    max-width: 100%;
+  }
+
+  .main-body-layout {
+    flex-direction: column;
+  }
+
+  .nav-bar {
+    background-color: #fff;
+  }
+  .nav-bar button {
+    border: 3px solid;
+  }
+
+  .grid-card-layout {
+    grid-template-columns: repeat(1, 1fr);
+
+    padding: 0px 30px;
+  }
+  footer {
+    padding: 50px 0px;
+  }
+
+  footer nav {
+    flex-direction: column;
+  }
+  footer nav a {
+    padding: 10px 10px;
+  }
+}
+
+/* ----------------------------------------------------------------
+Mobile responsive css Ends here  
+-- ----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+Tablet responsive css starts here  
+-- ----------------------------------------------------------------*/
+
+@media (min-width: 669px) and (max-width: 992px) {
+}
+
+/* ----------------------------------------------------------------
+Tablet responsive css Ends here  
+-- ----------------------------------------------------------------*/
