@@ -40,7 +40,7 @@ h1 {
   font-weight: 700;
   font-size: 4.5em;
   line-height: 1.1em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin: 10px 0px;
 }
 
@@ -48,7 +48,7 @@ h4 {
   font-weight: 600;
   font-size: 18px;
   color: #161616;
-  margin: 15px 0px 0px 0px;
+  margin: 10px 0px;
 }
 
 /* Above the fold css */
@@ -95,7 +95,7 @@ h4 {
 }
 
 /* ----------------------------------------------------------------
-                Blog Section Styling Start 
+                match Section Styling Start 
 ----------------------------------------------------------------*/
 
 .main-body {
@@ -155,53 +155,34 @@ button.active {
   column-gap: 25px;
 }
 
-/* Blog card realted all css */
+/* match card realted all css */
 
-.blog-card {
+.vs-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  column-gap: 20px;
+  row-gap: 20px;
+  margin: 25px 0 0 0;
+}
+
+span.vs-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #161616;
+}
+
+.match-card {
   border: 1px solid #e8e8e8;
   border-radius: 10px;
   margin-bottom: 24px;
 }
 
-.blog-featured-image img {
-  width: 100%;
-}
-
-.blog-card-details {
+.match-card-details {
   padding: 20px;
-}
-
-/* Blog card button css */
-
-.transfer {
-  background-color: #fff;
-  padding: 7px 20px;
-  border-radius: 5px;
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 0.5px;
-}
-
-.transfer:hover {
-  transform: translateY(-0.25em);
-  transition-duration: 300ms;
-}
-
-/* blog-excerpt */
-
-.blog-excerpt {
-  display: flex;
-  align-items: center;
-  padding: 0px 20px;
-}
-.blog-excerpt span {
-  display: flex;
-  align-items: center;
-  margin: 0 20px 10px 0px;
-}
-
-span p {
-  margin-left: 5px;
+  text-align: center;
 }
 
 /* -------------------------
@@ -333,6 +314,10 @@ Mobile responsive css starts here
 
     padding: 0px 30px;
   }
+  .vs-team {
+    padding: 0px 20px;
+  }
+
   footer {
     padding: 50px 0px;
   }
@@ -396,13 +381,6 @@ Tablet responsive css starts here
 
   .grid-card-layout {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .blog-card:nth-last-child() {
-    display: none;
-  }
-  .blog-card:nth-last-child(-n + 3) {
-    display: none;
   }
 }
 
